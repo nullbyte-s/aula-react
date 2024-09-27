@@ -1,7 +1,11 @@
-export default function BtnEletronico(){
-    return(
+type Props = {
+    name: string;
+}
+
+export default function BtnEletronico({ name }: Props) {
+    return (
         <div className="dsc-category">
-        Eletrônicos
-    </div>
+            {name}
+        </div>
     );
 }
